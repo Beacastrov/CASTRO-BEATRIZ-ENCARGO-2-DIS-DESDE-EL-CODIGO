@@ -1,243 +1,157 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Beatriz Castro Vega — Inicio</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Diseño desde el Código</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f5f0e8;
+      color: #111;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      padding: 32px 6%;
+      border-bottom: 1px solid #111;
+    }
+
+    header p {
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 8%;
+    }
+
+    h1 {
+      font-size: clamp(48px, 8vw, 105px);
+      line-height: 0.95;
+      margin-bottom: 30px;
+    }
+
+    .bajada {
+      max-width: 650px;
+      font-size: 18px;
+      line-height: 1.5;
+      margin-bottom: 60px;
+    }
+
+    .encargos {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+      max-width: 1000px;
+    }
+
+    .encargo {
+      border: 1px solid #111;
+      padding: 32px;
+      text-decoration: none;
+      color: #111;
+      min-height: 220px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: 0.2s ease;
+    }
+
+    .encargo:hover {
+      background: #111;
+      color: #f5f0e8;
+    }
+
+    .numero {
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .encargo h2 {
+      font-size: 34px;
+      margin-top: 50px;
+    }
+
+    .encargo p {
+      margin-top: 10px;
+      line-height: 1.4;
+    }
+
+    footer {
+      padding: 24px 6%;
+      font-size: 13px;
+      border-top: 1px solid #111;
+    }
+
+    @media (max-width: 700px) {
+      .encargos {
+        grid-template-columns: 1fr;
+      }
+
+      main {
+        padding: 60px 6%;
+      }
+    }
+  </style>
 </head>
 
-<body class="home-page">
+<body>
 
-  <nav class="nav">
-
-    <a href="index.html" class="logo">
-      BCV
-    </a>
-
-    <div class="nav-menu">
-
-      <a href="index.html" class="active">
-        INICIO
-      </a>
-
-      <a href="sobre-mi.html">
-        SOBRE MÍ
-      </a>
-
-      <a href="contacto.html">
-        CONTACTO
-      </a>
-
-      <a
-        href="https://wiki.ead.pucv.cl/Beatriz_Castro_Vega"
-        target="_blank"
-        class="wiki"
-      >
-        WIKI
-        <span class="arrow-line"></span>
-      </a>
-
-    </div>
-
-  </nav>
-
+  <header>
+    <p>Diseño desde el Código · 2026</p>
+  </header>
 
   <main>
 
-    <section class="chunky-hero">
+    <h1>Encargos 2 + 3</h1>
 
-      <div class="hero-meta">
-        <span>DISEÑO</span>
-        <span>PUCV</span>
-        <span>2026</span>
-      </div>
+    <p class="bajada">
+      Ejercicios de estilos, diagramación y análisis de interfaces web.
+    </p>
 
+    <section class="encargos">
 
-      <div class="name-block">
+      <a href="encargo-2/" class="encargo">
+        <span class="numero">02</span>
 
-        <h1 class="name-line">
-          BEATRIZ
-        </h1>
-
-
-        <div class="name-middle">
-
-          <span class="italic-word">
-            diseño
-          </span>
-
-          <h1 class="name-line">
-            CASTRO
-          </h1>
-
+        <div>
+          <h2>Encargo 2</h2>
+          <p>Estilos y diagramación básica con clases, contenedores, Flex y Grid.</p>
         </div>
+      </a>
 
+      <a href="encargo-3/" class="encargo">
+        <span class="numero">03</span>
 
-        <h1 class="name-line">
-          VEGA
-        </h1>
-
-      </div>
-
-
-      <div class="blue-block">
-
-        <span class="blue-number">
-          01
-        </span>
-
-
-        <div class="blue-text">
-
-          <p>
-            ESTUDIANTE DE DISEÑO
-          </p>
-
-          <p>
-            TERCER AÑO
-          </p>
-
-          <p>
-            ESCUELA DE ARQUITECTURA Y DISEÑO PUCV
-          </p>
-
+        <div>
+          <h2>Encargo 3</h2>
+          <p>Análisis de sitio y plataforma web: Zara + Pinterest.</p>
         </div>
-
-      </div>
-
-
-      <div class="hero-bottom">
-
-        <p class="intro-text">
-          Me interesa explorar el diseño desde
-          <strong>el objeto</strong>,
-          la materialidad y
-          <em>la interacción.</em>
-        </p>
-
-
-        <a
-          href="sobre-mi.html"
-          class="big-button"
-        >
-
-          <span>
-            CONOCER MÁS
-          </span>
-
-          <span class="big-arrow">
-            →
-          </span>
-
-        </a>
-
-      </div>
-
-    </section>
-
-
-    <section class="moving-strip">
-
-      <div class="moving-text">
-
-        <span>FORMA</span>
-        <span>✦</span>
-
-        <span>MATERIA</span>
-        <span>✦</span>
-
-        <span>EXPERIENCIA</span>
-        <span>✦</span>
-
-        <span>MOVIMIENTO</span>
-        <span>✦</span>
-
-        <span>FORMA</span>
-        <span>✦</span>
-
-        <span>MATERIA</span>
-        <span>✦</span>
-
-        <span>EXPERIENCIA</span>
-        <span>✦</span>
-
-        <span>MOVIMIENTO</span>
-
-      </div>
-
-    </section>
-
-
-    <section class="home-next">
-
-      <div class="next-left">
-
-        <span class="huge-number">
-          02
-        </span>
-
-      </div>
-
-
-      <div class="next-right">
-
-        <p class="small-label">
-          SIGUIENTE PÁGINA
-        </p>
-
-
-        <h2>
-          SOBRE
-          <span>MÍ</span>
-        </h2>
-
-
-        <div class="next-info">
-
-          <p>
-            Intereses, talleres, proyectos y experiencias
-            que han formado mi manera de acercarme al diseño.
-          </p>
-
-
-          <a
-            href="sobre-mi.html"
-            class="square-button"
-          >
-            ENTRAR
-            <span>→</span>
-          </a>
-
-        </div>
-
-      </div>
+      </a>
 
     </section>
 
   </main>
 
-
-  <footer class="chunky-footer">
-
-    <span>
-      BEATRIZ CASTRO VEGA
-    </span>
-
-    <span>
-      DISEÑO · PUCV
-    </span>
-
-    <span>
-      ENCARGO 02
-    </span>
-
+  <footer>
+    Beatriz Castro · Diseño desde el Código
   </footer>
 
-
-  <script src="script.js"></script>
-
 </body>
-
 </html>
