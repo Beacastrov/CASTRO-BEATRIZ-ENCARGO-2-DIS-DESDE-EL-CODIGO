@@ -1,346 +1,438 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Encargo 3 · Análisis web</title>
-  <link rel="stylesheet" href="style.css?v=5">
+
+  <link rel="stylesheet" href="style.css?v=10">
 </head>
 
 <body>
 
-  <header class="hero">
-    <p class="eyebrow">Diseño desde el Código · 2026</p>
+  <header class="portada">
+    <p class="curso">Diseño desde el Código · 2026</p>
+
     <h1>Encargo 3</h1>
-    <p class="intro">
-      Análisis comparativo de un sitio web y una plataforma digital a partir de su
-      comportamiento en pantalla, organización visual, estructura de columnas y adaptación
-      entre computador, iPad e iPhone.
+
+    <p class="bajada">
+      Análisis comparativo de Zara y Pinterest a partir de su comportamiento
+      en pantalla, distribución de columnas, adaptación responsive y decisiones
+      de diseño.
     </p>
   </header>
 
-  <main class="container">
 
-    <section class="section">
+  <main>
+
+    <!-- INTRODUCCIÓN -->
+
+    <section class="seccion">
+
+      <p class="numero">01</p>
+
       <h2>Casos seleccionados</h2>
 
-      <div class="text-card">
+      <div class="texto-intro">
+
         <p>
-          Para este análisis se seleccionó <strong>Zara</strong> como sitio web de comercio
-          electrónico y <strong>Pinterest</strong> como plataforma digital orientada a la
-          búsqueda, exploración y organización de contenido visual.
+          Se seleccionó <strong>Zara</strong> como sitio web de comercio
+          electrónico y <strong>Pinterest</strong> como plataforma web de
+          exploración y organización visual.
         </p>
 
         <p>
-          Ambos casos fueron observados en computador, iPad e iPhone para comparar cómo
-          cambia su diagramación, navegación, jerarquía y uso del espacio según el dispositivo.
+          Ambos casos fueron observados en computador, iPad e iPhone para
+          reconocer cómo cambia su estructura según el tamaño de pantalla.
         </p>
+
       </div>
+
     </section>
 
 
     <!-- ZARA -->
 
-    <section class="section">
+    <section class="seccion caso">
 
-      <div class="title-row">
-        <h2>Zara</h2>
-        <span class="tag">Sitio web</span>
-      </div>
+      <p class="numero">02 · SITIO WEB</p>
 
-      <div class="analysis-grid">
+      <h2>Zara</h2>
 
-        <article class="text-card">
+
+      <div class="preguntas">
+
+        <article>
           <h3>¿Qué se mueve y qué queda fijo?</h3>
+
           <p>
-            El contenido visual se desplaza verticalmente durante el scroll, mientras algunos
-            accesos de navegación permanecen disponibles. En computador se mantienen visibles
-            elementos como menú, búsqueda, cuenta y cesta. En dispositivos más pequeños,
-            estas funciones se reorganizan principalmente en la zona inferior.
+            El contenido principal se desplaza verticalmente. Algunos accesos
+            de navegación permanecen disponibles durante el recorrido. En
+            computador estos elementos se ubican principalmente en los bordes,
+            mientras que en iPhone varias funciones pasan a una barra inferior.
           </p>
         </article>
 
-        <article class="text-card">
+
+        <article>
           <h3>Distribución de columnas</h3>
+
           <p>
-            Zara utiliza distintas retículas según la sección. En computador aprovecha el ancho
-            para distribuir productos, imágenes y categorías en varias columnas. En iPad e iPhone
-            disminuye la cantidad de columnas y aumenta la lectura vertical.
+            En computador Zara aprovecha el ancho disponible para distribuir
+            productos, menús e imágenes en varias columnas. Al reducir la
+            pantalla, la cantidad de columnas disminuye y el contenido adquiere
+            una organización más vertical.
           </p>
         </article>
 
-        <article class="text-card">
-          <h3>¿Cómo responde al reducir la pantalla?</h3>
+
+        <article>
+          <h3>Adaptación a pantallas pequeñas</h3>
+
           <p>
-            La interfaz conserva su identidad minimalista, pero compacta las opciones de navegación,
-            modifica las proporciones de las imágenes y reorganiza el contenido para favorecer
-            una interacción táctil más directa.
+            La identidad visual se mantiene mediante grandes imágenes, mucho
+            espacio en blanco y una navegación minimalista. En iPhone las
+            imágenes ocupan mayor proporción de la pantalla y los controles se
+            simplifican.
+          </p>
+        </article>
+
+
+        <article>
+          <h3>Evaluación</h3>
+
+          <p>
+            Las decisiones son apropiadas porque mantienen una identidad
+            consistente y priorizan el producto. Sin embargo, algunos accesos
+            podrían ser más evidentes para usuarios poco familiarizados con la
+            navegación minimalista de Zara.
           </p>
         </article>
 
       </div>
 
 
-      <h3 class="subheading">Computador</h3>
+      <!-- ZARA PC -->
 
-      <div class="gallery gallery-2">
+      <h3 class="dispositivo-titulo">Computador</h3>
 
-        <figure class="shot">
+      <div class="galeria">
+
+        <figure>
           <img src="img/zara-pc-portada.png" alt="Portada de Zara en computador">
+
           <figcaption>
-            Portada: gran imagen editorial, logo protagonista y navegación distribuida hacia los bordes.
+            Portada: imagen principal de gran escala y navegación ubicada en
+            los bordes de la pantalla.
           </figcaption>
         </figure>
 
-        <figure class="shot">
+
+        <figure>
           <img src="img/zara-pc-favoritos.png" alt="Favoritos de Zara en computador">
+
           <figcaption>
-            Favoritos: productos organizados en columnas y menús laterales que aprovechan el ancho de pantalla.
+            Favoritos: productos distribuidos horizontalmente en varias
+            columnas.
           </figcaption>
         </figure>
 
-        <figure class="shot">
+
+        <figure>
           <img src="img/zara-pc-menu.png" alt="Menú de Zara en computador">
+
           <figcaption>
-            Menú: categorías principales a la izquierda y contenido visual organizado en el centro.
+            Menú: categorías a la izquierda y contenido visual organizado en
+            una zona central.
           </figcaption>
         </figure>
 
-        <figure class="shot">
-          <img src="img/zara-pc-scroll.png" alt="Scroll y footer de Zara en computador">
+
+        <figure>
+          <img src="img/zara-pc-scroll.png" alt="Final de página Zara en computador">
+
           <figcaption>
-            Final del recorrido: grandes espacios vacíos, contenido centrado y accesos secundarios en la parte inferior.
+            Final del scroll: espacio vacío predominante y navegación secundaria.
           </figcaption>
         </figure>
 
       </div>
 
 
-      <h3 class="subheading">iPad</h3>
+      <!-- ZARA IPAD -->
 
-      <div class="gallery gallery-2">
+      <h3 class="dispositivo-titulo">iPad</h3>
 
-        <figure class="shot">
+      <div class="galeria">
+
+        <figure>
           <img src="img/zara-ipad-menu.jpeg" alt="Menú de Zara en iPad">
+
           <figcaption>
-            El menú mantiene varias categorías y contenido visual, pero se ajusta a un espacio horizontal menor.
+            El menú conserva varias categorías, pero se reorganiza en un ancho
+            de pantalla menor.
           </figcaption>
         </figure>
 
-        <figure class="shot">
+
+        <figure>
           <img src="img/zara-ipad-favoritos.png" alt="Favoritos de Zara en iPad">
+
           <figcaption>
-            En favoritos se conserva la organización de productos, pero con una retícula más compacta.
+            Favoritos mantiene la lógica visual de escritorio, pero con una
+            distribución más compacta.
           </figcaption>
         </figure>
 
       </div>
 
 
-      <h3 class="subheading">iPhone</h3>
+      <!-- ZARA IPHONE -->
 
-      <div class="gallery gallery-2">
+      <h3 class="dispositivo-titulo">iPhone</h3>
 
-        <figure class="shot">
-          <img src="img/zara-iphone-portada.jpeg" alt="Portada de Zara en iPhone">
+      <div class="galeria movil">
+
+        <figure>
+          <img src="img/zara-iphone-portada.jpeg" alt="Portada Zara iPhone">
+
           <figcaption>
-            La portada pasa a un formato completamente vertical y la navegación principal se instala en la zona inferior.
+            Portada vertical con navegación principal en la zona inferior.
           </figcaption>
         </figure>
 
-        <figure class="shot">
-          <img src="img/zara-iphone-favoritos.png" alt="Favoritos de Zara en iPhone">
+
+        <figure>
+          <img src="img/zara-iphone-favoritos.png" alt="Favoritos Zara iPhone">
+
           <figcaption>
-            Favoritos se reduce a una grilla de dos columnas, conservando imagen, información y acciones principales.
+            Favoritos se organiza principalmente mediante una grilla de dos
+            columnas.
           </figcaption>
         </figure>
 
-        <figure class="shot">
-          <img src="img/zara-iphone-menu.png" alt="Menú de Zara en iPhone">
+
+        <figure>
+          <img src="img/zara-iphone-menu.png" alt="Menú Zara iPhone">
+
           <figcaption>
-            El menú se transforma en un recorrido vertical con imágenes y categorías adaptadas al ancho del teléfono.
+            El menú se transforma en un recorrido vertical con imágenes y
+            categorías.
           </figcaption>
         </figure>
 
-        <figure class="shot">
-          <img src="img/zara-iphone-scroll.png" alt="Scroll de Zara en iPhone">
+
+        <figure>
+          <img src="img/zara-iphone-scroll.png" alt="Scroll Zara iPhone">
+
           <figcaption>
-            Incluso al llegar al final de la página, la barra inferior continúa accesible y funciona como navegación persistente.
+            Al final del recorrido la barra inferior continúa disponible.
           </figcaption>
         </figure>
 
-      </div>
-
-
-      <div class="evaluation">
-        <h3>Evaluación</h3>
-        <p>
-          Las decisiones de Zara son coherentes con su identidad visual porque priorizan imagen,
-          espacio vacío y una navegación discreta. Como ajuste, algunos accesos podrían ser más
-          evidentes para usuarios que no están familiarizados con la lógica minimalista del sitio.
-        </p>
       </div>
 
     </section>
-
 
 
     <!-- PINTEREST -->
 
-    <section class="section">
+    <section class="seccion caso">
 
-      <div class="title-row">
-        <h2>Pinterest</h2>
-        <span class="tag">Plataforma web</span>
-      </div>
+      <p class="numero">03 · PLATAFORMA WEB</p>
 
-      <div class="analysis-grid">
+      <h2>Pinterest</h2>
 
-        <article class="text-card">
+
+      <div class="preguntas">
+
+        <article>
           <h3>¿Qué se mueve y qué queda fijo?</h3>
+
           <p>
-            El feed se desplaza continuamente mientras la navegación principal permanece disponible.
-            En computador se mantiene una barra lateral fija y un buscador superior. En iPad e iPhone
-            las acciones principales se concentran en barras superior e inferior.
+            El feed se desplaza continuamente mientras la navegación permanece
+            disponible. En computador se utiliza una barra lateral y un buscador
+            superior. En iPhone las acciones principales pasan a una barra
+            inferior.
           </p>
         </article>
 
-        <article class="text-card">
+
+        <article>
           <h3>Distribución de columnas</h3>
+
           <p>
-            Pinterest utiliza una retícula tipo masonry, donde las imágenes tienen alturas diferentes.
-            En computador aparecen varias columnas simultáneamente, mientras que en iPad se reducen
-            y en iPhone el feed se organiza principalmente en dos columnas.
+            Pinterest utiliza una retícula tipo masonry, donde las imágenes
+            tienen diferentes alturas. En computador se muestran muchas columnas
+            simultáneamente, mientras que en dispositivos pequeños disminuye su
+            cantidad.
           </p>
         </article>
 
-        <article class="text-card">
-          <h3>¿Cómo responde al reducir la pantalla?</h3>
+
+        <article>
+          <h3>Adaptación a pantallas pequeñas</h3>
+
           <p>
-            La plataforma mantiene la lógica del feed, pero simplifica su navegación y reduce la
-            densidad de información. El buscador sigue siendo protagonista y los accesos se adaptan
-            a una interacción principalmente táctil.
+            Pinterest conserva la lógica de exploración visual, pero simplifica
+            su navegación. En iPhone el feed se organiza principalmente en dos
+            columnas y el buscador mantiene una posición protagonista.
+          </p>
+        </article>
+
+
+        <article>
+          <h3>Evaluación</h3>
+
+          <p>
+            La adaptación funciona correctamente porque conserva las principales
+            acciones y la lógica de exploración. Sin embargo, la gran cantidad de
+            imágenes puede producir una sensación de saturación visual.
           </p>
         </article>
 
       </div>
 
 
-      <h3 class="subheading">Computador</h3>
+      <!-- PINTEREST PC -->
 
-      <div class="gallery gallery-2">
+      <h3 class="dispositivo-titulo">Computador</h3>
 
-        <figure class="shot">
-          <img src="img/pinterest-pc-portada.png" alt="Portada de Pinterest en computador">
+      <div class="galeria">
+
+        <figure>
+          <img src="img/pinterest-pc-portada.png" alt="Portada Pinterest PC">
+
           <figcaption>
-            Portada pública: composición amplia, buscador superior y contenido visual acompañado por llamadas a la acción.
+            Portada pública con mensaje principal, buscador superior e imágenes
+            de apoyo.
           </figcaption>
         </figure>
 
-        <figure class="shot">
-          <img src="img/pinterest-pc-feed.png" alt="Feed de Pinterest en computador">
+
+        <figure>
+          <img src="img/pinterest-pc-feed.png" alt="Feed Pinterest PC">
+
           <figcaption>
-            Feed: gran cantidad de columnas con alturas variables y navegación lateral permanente.
+            El feed utiliza muchas columnas y tarjetas de alturas diferentes.
           </figcaption>
         </figure>
 
-        <figure class="shot">
-          <img src="img/pinterest-pc-explorar.png" alt="Explorar de Pinterest en computador">
+
+        <figure>
+          <img src="img/pinterest-pc-explorar.png" alt="Pinterest explorar PC">
+
           <figcaption>
-            Explorar reorganiza el contenido en tarjetas de mayor tamaño y agrupaciones temáticas.
+            La sección Explorar utiliza tarjetas más grandes y contenidos
+            agrupados temáticamente.
           </figcaption>
         </figure>
 
-        <figure class="shot">
-          <img src="img/pinterest-pc-notificaciones.png" alt="Notificaciones de Pinterest en computador">
+
+        <figure>
+          <img src="img/pinterest-pc-notificaciones.png" alt="Pinterest notificaciones PC">
+
           <figcaption>
-            El panel de notificaciones se superpone lateralmente sin eliminar por completo el feed de fondo.
-          </figcaption>
-        </figure>
-
-      </div>
-
-
-      <h3 class="subheading">iPad</h3>
-
-      <div class="gallery gallery-2">
-
-        <figure class="shot">
-          <img src="img/pinterest-ipad-feed.jpeg" alt="Feed de Pinterest en iPad">
-          <figcaption>
-            El feed mantiene varias columnas y una navegación horizontal por categorías en la parte superior.
-          </figcaption>
-        </figure>
-
-        <figure class="shot">
-          <img src="img/pinterest-ipad-buscar.jpeg" alt="Buscar en Pinterest en iPad">
-          <figcaption>
-            Al seleccionar Buscar, la barra de búsqueda toma protagonismo y aparecen recomendaciones agrupadas por temas.
+            Las notificaciones aparecen como un panel lateral sin reemplazar
+            completamente el contenido.
           </figcaption>
         </figure>
 
       </div>
 
 
-      <h3 class="subheading">iPhone</h3>
+      <!-- PINTEREST IPAD -->
 
-      <div class="gallery gallery-2">
+      <h3 class="dispositivo-titulo">iPad</h3>
 
-        <figure class="shot">
-          <img src="img/pinterest-iphone-feed.jpeg" alt="Feed de Pinterest en iPhone">
+      <div class="galeria">
+
+        <figure>
+          <img src="img/pinterest-ipad-feed.jpeg" alt="Pinterest feed iPad">
+
           <figcaption>
-            El feed se reduce principalmente a dos columnas y mantiene una barra inferior de navegación fija.
+            El feed mantiene varias columnas y categorías horizontales en la
+            parte superior.
           </figcaption>
         </figure>
 
-        <figure class="shot">
-          <img src="img/pinterest-iphone-buscar.jpeg" alt="Buscar en Pinterest en iPhone">
+
+        <figure>
+          <img src="img/pinterest-ipad-buscar.jpeg" alt="Pinterest buscar iPad">
+
           <figcaption>
-            Buscar ocupa prácticamente todo el ancho disponible y reorganiza las recomendaciones en una lectura vertical.
+            Al entrar a Buscar aparecen una barra protagonista y recomendaciones
+            organizadas por temas.
           </figcaption>
         </figure>
 
       </div>
 
 
-      <div class="evaluation">
-        <h3>Evaluación</h3>
-        <p>
-          Pinterest adapta correctamente su gran cantidad de contenido mediante una retícula flexible.
-          La navegación se mantiene accesible en todos los dispositivos. Como ajuste, la gran densidad
-          visual del feed puede generar saturación cuando muchas imágenes compiten simultáneamente por atención.
-        </p>
+      <!-- PINTEREST IPHONE -->
+
+      <h3 class="dispositivo-titulo">iPhone</h3>
+
+      <div class="galeria movil">
+
+        <figure>
+          <img src="img/pinterest-iphone-feed.jpeg" alt="Pinterest feed iPhone">
+
+          <figcaption>
+            El feed se reduce a dos columnas principales y utiliza navegación
+            inferior.
+          </figcaption>
+        </figure>
+
+
+        <figure>
+          <img src="img/pinterest-iphone-buscar.jpeg" alt="Pinterest buscar iPhone">
+
+          <figcaption>
+            El buscador ocupa casi todo el ancho y las recomendaciones pasan a
+            una lectura vertical.
+          </figcaption>
+        </figure>
+
       </div>
 
     </section>
 
 
-    <!-- COMPARACIÓN -->
+    <!-- COMPARACION -->
 
-    <section class="section conclusion">
+    <section class="seccion comparacion">
+
+      <p class="numero">04</p>
 
       <h2>Comparación final</h2>
 
-      <p class="big-phrase">
+      <p class="frase">
         Zara dirige la mirada.<br>
         Pinterest invita a explorar.
       </p>
 
-      <div class="comparison">
+      <div class="dos-columnas">
 
-        <div class="text-card">
+        <div>
           <h3>Zara</h3>
+
           <p>
-            Utiliza grandes imágenes, mucho espacio vacío y una navegación visualmente discreta.
-            Su estructura busca controlar la atención y dirigirla hacia productos y colecciones.
+            Utiliza imágenes grandes, espacio vacío y navegación discreta para
+            controlar la atención y dirigir al usuario hacia productos y
+            colecciones.
           </p>
         </div>
 
-        <div class="text-card">
+
+        <div>
           <h3>Pinterest</h3>
+
           <p>
-            Utiliza una retícula densa, scroll continuo y navegación persistente.
-            Su estructura favorece el descubrimiento constante y la permanencia dentro de la plataforma.
+            Utiliza múltiples imágenes, scroll continuo y navegación persistente
+            para favorecer el descubrimiento constante de nuevos contenidos.
           </p>
         </div>
 
@@ -349,6 +441,7 @@
     </section>
 
   </main>
+
 
   <footer>
     Beatriz Castro · Diseño desde el Código · 2026
