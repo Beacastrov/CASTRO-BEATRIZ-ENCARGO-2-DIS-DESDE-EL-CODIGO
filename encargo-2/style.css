@@ -6,214 +6,196 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background: #f7f4ee;
-  color: #1a1a1a;
+  background: #f4efe7;
+  color: #171717;
 }
 
-.contenedor-principal {
+.pagina {
   width: min(1180px, 90%);
   margin: 0 auto;
   padding: 80px 0;
 }
 
 
-/* BLOQUE SUPERIOR */
+/* PARTE SUPERIOR */
 
-.bloque-superior {
+.inicio {
   display: grid;
-  grid-template-columns: 0.9fr 1.4fr;
+  grid-template-columns: 0.85fr 1.35fr;
   gap: 90px;
   align-items: start;
-  margin-bottom: 110px;
+  margin-bottom: 120px;
 }
 
-.presentacion {
-  padding-top: 20px;
+.intro {
+  padding-top: 10px;
 }
 
-.presentacion h1 {
-  font-size: 48px;
-  line-height: 0.98;
-  max-width: 390px;
+.mini-titulo {
+  font-size: 11px;
+  letter-spacing: 2px;
   margin-bottom: 28px;
-  font-weight: 600;
+  color: #286b68;
 }
 
-.detalle-amarillo {
-  display: block;
-  width: 54px;
-  height: 2px;
-  background: #1f5d61;
-  margin-bottom: 30px;
+.intro h1 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 54px;
+  font-weight: normal;
+  line-height: 0.98;
+  max-width: 430px;
+  margin-bottom: 35px;
 }
 
-.presentacion p {
+.descripcion {
   max-width: 390px;
   font-size: 15px;
-  line-height: 1.65;
-  margin-bottom: 34px;
-  color: #4a4a4a;
+  line-height: 1.7;
+  color: #555;
+  margin-bottom: 35px;
 }
 
 .boton {
   display: inline-block;
-  border: 1px solid #1f5d61;
-  color: #1f5d61;
-  background: transparent;
   text-decoration: none;
+  color: #f4efe7;
+  background: #286b68;
+  padding: 13px 20px;
   font-size: 13px;
-  padding: 12px 18px;
-  transition: 0.2s ease;
-}
-
-.boton:hover {
-  background: #1f5d61;
-  color: #ffffff;
 }
 
 
-/* GRILLA DE SERVICIOS */
+/* GRID DE TARJETAS */
 
-.grilla-servicios {
+.servicios {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+  gap: 18px;
 }
 
-.tarjeta-servicio {
-  background: transparent;
-  border: 1px solid #c8c3ba;
+.tarjeta {
+  min-height: 210px;
+  border: 1px solid #bdb7ad;
   padding: 26px;
-  min-height: 170px;
 
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 
-.tarjeta-servicio span {
-  display: block;
+.categoria {
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  color: #286b68;
+}
+
+.tarjeta h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 25px;
+  line-height: 1.15;
+  font-weight: normal;
+  margin-top: auto;
+  max-width: 250px;
+}
+
+.tarjeta span {
   font-size: 11px;
-  color: #1f5d61;
-  margin-bottom: 35px;
-}
-
-.tarjeta-servicio h2 {
-  font-size: 20px;
-  line-height: 1.2;
-  font-weight: 500;
+  margin-top: 25px;
+  color: #777;
 }
 
 
-/* BLOQUE DEPORTES */
+/* BLOQUE INFERIOR */
 
-.bloque-deportes {
+.deportes {
   display: flex;
-  flex-direction: row-reverse;
-  min-height: 440px;
-  border-top: 1px solid #c8c3ba;
-  padding-top: 30px;
+  min-height: 470px;
 }
 
-.info-deportes {
-  width: 45%;
-  background: #1f5d61;
-  color: white;
-  padding: 55px 48px;
+.foto {
+  width: 58%;
+  overflow: hidden;
+}
+
+.foto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.texto-deportes {
+  width: 42%;
+  background: #243b3a;
+  color: #fff;
+  padding: 60px 50px;
 
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 
-.subtitulo {
-  font-size: 11px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  opacity: 0.75;
-  margin-bottom: 42px;
+.claro {
+  color: #d4ddd9;
 }
 
-.info-deportes h2 {
-  font-size: 42px;
+.texto-deportes h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 46px;
+  font-weight: normal;
   line-height: 1;
-  font-weight: 500;
-  margin-bottom: 22px;
-}
-
-.linea-clara {
-  width: 48px;
-  height: 2px;
-  background: white;
-  opacity: 0.7;
-  margin-bottom: 28px;
-}
-
-.info-deportes p {
-  font-size: 13px;
-  line-height: 1.7;
   margin-bottom: 35px;
-  max-width: 360px;
 }
 
-.info-deportes .boton {
-  border-color: white;
-  color: white;
+.texto-deportes > p:not(.mini-titulo) {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #e6e6e6;
+  max-width: 350px;
+}
+
+.boton-claro {
+  background: transparent;
+  border: 1px solid #fff;
   margin-top: auto;
 }
 
-.info-deportes .boton:hover {
-  background: white;
-  color: #1f5d61;
-}
 
-.imagen-deportes {
-  width: 55%;
-  min-height: 440px;
-  overflow: hidden;
-}
-
-.imagen-deportes img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  filter: grayscale(15%);
-}
-
-
-/* RESPONSIVE */
+/* MÓVIL */
 
 @media (max-width: 800px) {
 
-  .contenedor-principal {
-    padding: 50px 0;
+  .pagina {
+    padding: 45px 0;
   }
 
-  .bloque-superior {
+  .inicio {
     grid-template-columns: 1fr;
-    gap: 50px;
+    gap: 55px;
     margin-bottom: 70px;
   }
 
-  .grilla-servicios {
+  .intro h1 {
+    font-size: 43px;
+  }
+
+  .servicios {
     grid-template-columns: 1fr;
   }
 
-  .bloque-deportes {
+  .deportes {
     flex-direction: column;
   }
 
-  .info-deportes,
-  .imagen-deportes {
+  .foto,
+  .texto-deportes {
     width: 100%;
   }
 
-  .imagen-deportes {
-    min-height: 300px;
+  .foto {
+    height: 320px;
   }
 
-  .presentacion h1 {
-    font-size: 40px;
+  .texto-deportes {
+    min-height: 420px;
   }
 }
