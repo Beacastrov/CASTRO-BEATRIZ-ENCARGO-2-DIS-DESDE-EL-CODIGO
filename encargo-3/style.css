@@ -1,1 +1,352 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4efe7;
+  color: #151515;
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.portada {
+  min-height: 78vh;
+  padding: 60px 7%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border-bottom: 1px solid #1a1a1a;
+}
+
+.curso {
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 28px;
+}
+
+.portada h1 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(70px, 13vw, 170px);
+  font-weight: normal;
+  line-height: 0.85;
+  margin-bottom: 35px;
+}
+
+.bajada {
+  max-width: 720px;
+  font-size: 18px;
+  line-height: 1.55;
+}
+
+main {
+  width: min(1200px, 88%);
+  margin: 0 auto;
+}
+
+.numero {
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: #6a6a6a;
+}
+
+.introduccion {
+  display: grid;
+  grid-template-columns: 0.8fr 1.5fr;
+  gap: 80px;
+  padding: 90px 0 120px;
+  border-bottom: 1px solid #b8b1a8;
+}
+
+.introduccion h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 42px;
+  font-weight: normal;
+  line-height: 1;
+  margin-top: 16px;
+}
+
+.intro-texto {
+  display: grid;
+  gap: 20px;
+  font-size: 17px;
+  line-height: 1.65;
+  max-width: 760px;
+}
+
+.caso {
+  padding: 110px 0;
+  border-bottom: 1px solid #b8b1a8;
+}
+
+.encabezado-caso {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 20px;
+  align-items: end;
+  margin-bottom: 80px;
+}
+
+.tipo {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+  margin-bottom: 8px;
+  color: #666;
+}
+
+.encabezado-caso h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(60px, 9vw, 110px);
+  font-weight: normal;
+  line-height: 0.9;
+}
+
+.analisis {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 70px;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.analisis.invertido {
+  grid-template-columns: 1.2fr 0.8fr;
+}
+
+.analisis.invertido .texto {
+  order: 2;
+}
+
+.analisis.invertido .imagen-placeholder {
+  order: 1;
+}
+
+.texto h3,
+.evaluacion h3 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 30px;
+  font-weight: normal;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.texto p,
+.evaluacion p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #3f3f3f;
+}
+
+.imagen-placeholder {
+  min-height: 420px;
+  border: 1px solid #aaa39a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e9e2d9;
+  padding: 30px;
+}
+
+.imagen-placeholder p {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #777;
+}
+
+.comparacion-dispositivos {
+  display: grid;
+  grid-template-columns: 1.35fr 0.95fr 0.72fr;
+  gap: 18px;
+  align-items: end;
+}
+
+.dispositivo {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.dispositivo span {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.mini-placeholder {
+  min-height: 260px;
+  border: 1px solid #aaa39a;
+  background: #e9e2d9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 24px;
+}
+
+.dispositivo:nth-child(2) .mini-placeholder {
+  min-height: 230px;
+}
+
+.dispositivo:nth-child(3) .mini-placeholder {
+  min-height: 310px;
+}
+
+.evaluacion {
+  background: #1d3d3a;
+  color: white;
+  padding: 48px;
+  width: 70%;
+  margin-left: auto;
+}
+
+.evaluacion h3 {
+  color: white;
+}
+
+.evaluacion p {
+  color: #edf2f1;
+}
+
+.cierre {
+  padding: 120px 0;
+}
+
+.cierre h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 50px;
+  font-weight: normal;
+  margin-top: 15px;
+  margin-bottom: 55px;
+}
+
+.frase {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(36px, 5vw, 68px);
+  line-height: 1.05;
+  max-width: 900px;
+  margin-bottom: 70px;
+}
+
+.comparacion-final {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  max-width: 900px;
+  margin-left: auto;
+}
+
+.comparacion-final p {
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+footer {
+  border-top: 1px solid #1a1a1a;
+  padding: 30px 7%;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 850px) {
+  .portada {
+    min-height: 65vh;
+    padding: 45px 6%;
+  }
+
+  main {
+    width: 88%;
+  }
+
+  .introduccion,
+  .analisis,
+  .analisis.invertido {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .analisis.invertido .texto,
+  .analisis.invertido .imagen-placeholder {
+    order: initial;
+  }
+
+  .encabezado-caso {
+    grid-template-columns: 1fr;
+  }
+
+  .comparacion-dispositivos {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .mini-placeholder,
+  .dispositivo:nth-child(2) .mini-placeholder,
+  .dispositivo:nth-child(3) .mini-placeholder {
+    min-height: 190px;
+  }
+
+  .evaluacion {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .comparacion-final {
+    grid-template-columns: 1fr;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 560px) {
+  .portada h1 {
+    font-size: 72px;
+  }
+
+  .bajada {
+    font-size: 16px;
+  }
+
+  .introduccion,
+  .caso,
+  .cierre {
+    padding: 70px 0;
+  }
+
+  .introduccion h2 {
+    font-size: 36px;
+  }
+
+  .encabezado-caso h2 {
+    font-size: 64px;
+  }
+
+  .texto h3,
+  .evaluacion h3 {
+    font-size: 27px;
+  }
+
+  .comparacion-dispositivos {
+    grid-template-columns: 1fr;
+  }
+
+  .mini-placeholder,
+  .dispositivo:nth-child(2) .mini-placeholder,
+  .dispositivo:nth-child(3) .mini-placeholder {
+    min-height: 320px;
+  }
+
+  .evaluacion {
+    padding: 32px;
+  }
+
+  .frase {
+    font-size: 38px;
+  }
+}
