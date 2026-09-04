@@ -1,1 +1,186 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #ffffff;
+  color: #111111;
+}
+
+.pagina {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 80px 40px;
+}
+
+
+/* PRESENTACIÓN */
+
+.presentacion {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 80px;
+  align-items: start;
+  margin-bottom: 100px;
+}
+
+.intro h1 {
+  font-size: 40px;
+  line-height: 1.05;
+  max-width: 380px;
+  margin-bottom: 22px;
+}
+
+.etiqueta {
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+.linea {
+  width: 28px;
+  height: 4px;
+  background: #f5b800;
+  margin-bottom: 28px;
+}
+
+.texto-intro {
+  font-size: 15px;
+  line-height: 1.6;
+  max-width: 360px;
+  margin-bottom: 30px;
+}
+
+.boton {
+  display: inline-block;
+  background: #f5b800;
+  color: #111;
+  text-decoration: none;
+  padding: 12px 16px;
+  font-size: 13px;
+}
+
+
+/* TARJETAS */
+
+.servicios {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.tarjeta {
+  background: #f4f4f4;
+  padding: 24px;
+  min-height: 170px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.tarjeta .numero {
+  font-size: 11px;
+}
+
+.tarjeta p {
+  font-size: 11px;
+  margin-top: 35px;
+  margin-bottom: 8px;
+}
+
+.tarjeta h2 {
+  font-size: 17px;
+  line-height: 1.25;
+  font-weight: 500;
+}
+
+
+/* DEPORTES */
+
+.deportes {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  min-height: 430px;
+}
+
+.deportes-texto {
+  background: #102348;
+  color: white;
+  padding: 55px 45px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.etiqueta-clara {
+  font-size: 11px;
+  margin-bottom: 35px;
+}
+
+.deportes-texto h2 {
+  font-size: 38px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.linea.amarilla {
+  width: 28px;
+  height: 4px;
+  background: #f5b800;
+  margin-bottom: 25px;
+}
+
+.deportes-texto > p:not(.etiqueta-clara) {
+  font-size: 13px;
+  line-height: 1.65;
+  margin-bottom: 30px;
+}
+
+.amarillo {
+  margin-top: auto;
+}
+
+.deportes-imagen {
+  min-height: 430px;
+  background: #d8d8d8;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.deportes-imagen p {
+  color: #555;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 750px) {
+
+  .pagina {
+    padding: 40px 20px;
+  }
+
+  .presentacion {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+
+  .servicios {
+    grid-template-columns: 1fr;
+  }
+
+  .deportes {
+    grid-template-columns: 1fr;
+  }
+
+  .deportes-imagen {
+    min-height: 300px;
+  }
+}
